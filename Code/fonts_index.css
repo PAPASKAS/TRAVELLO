@@ -1,0 +1,46 @@
+*{
+    color:black;
+}
+a{
+    text-decoration:none;
+}
+@font-face {
+    font-family: "poppins-black";
+    src: url(../Source/Fonts/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "sofia";
+    src: url(../Source/Fonts/Sofia-Pro-Regular.otf);
+}
+@font-face {
+    font-family: "sofia-black";
+    src: url(../Source/Fonts/Sofia-Pro-Black.otf);
+}
+@font-face {
+    font-family: "sofia-semibold";
+    src: url(../Source/Fonts/Sofia-Pro-Semi-Bold.otf);
+}
+
+
+/*header*/
+.logo a{/*logo*/
+    font-family: "Sofia-semibold";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #188182;
+}
+.header nav{/*nav*/
+    font-family: "sofia";
+    font-size: 16px;
+    line-height: 26px;
+}
+.header .row:last-child p{/*EXPLORE THE...*/
+    font-family: "Poppins-black";
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    color: transparent;
+    -webkit-text-stroke: 2px #083C4C;
+}

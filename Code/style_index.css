@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+span{
+    display:inline-block;
+}
+
+
+
+/*header*/
+.block_header{
+    height: 735px;
+    background: url(../Source/Images/Mask\ Group\ 1\ 1.svg) no-repeat bottom center/100%,
+                url(../Source/Images/Vector\ 5.svg) no-repeat right top,
+                url(../Source/Images/Vector\ 6.svg) no-repeat right top,
+                url(../Source/Images/Frame.svg) no-repeat 80% 30%;
+}
+.header .row{
+    padding:0 15px;
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin:0 auto;
+    width:1080px;
+}
+.header .row:first-child{/*top padding*/
+    padding-top:32px;
+}
+.header .row:last-child{/*for align "EXPLORE THE...*/
+    height:calc(100vh - 120px);
+}
+.header .row:last-child div{/*align "EXPLORE THE...*/
+    margin:auto 0;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo a{/*align logo img*/
+    display:flex;
+}
+.logo a:last-of-type{/*align logo text*/
+    margin-left:4.5px;
+}
+
+.header nav{
+    display:flex;
+    align-items:center;
+    gap:29px;
+}
+
+
+
+
