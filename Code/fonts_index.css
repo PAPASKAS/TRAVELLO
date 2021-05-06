@@ -44,3 +44,91 @@ a{
     color: transparent;
     -webkit-text-stroke: 2px #083C4C;
 }
+
+/*intro*/
+.intro input{
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #7A7A7A
+}
+.intro button{
+    font-family: "Sofia-semibold";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+
+/*learn more*/
+.learn_more p:first-of-type{
+    font-family: "Sofia-black";
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    color: #009D98;
+}
+.learn_more p:last-of-type{
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #7A7A7A;
+}
+.learn_more a div{
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/*sldier*/
+.heading_slider > span > p:first-of-type{
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+.heading_slider > span > p:last-of-type{
+    font-family: "Sofia-bold";
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #130F40;    
+}
+.heading_slider a div{
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;    
+}
+.move_slider > span > div:first-of-type span{
+    font-family: "Sofia-semibold";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 34px;
+    color: #130F40;
+}
+.move_slider > span > div:nth-of-type(2){
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #7A7A7A;    
+}
+.move_slider > span > div:last-of-type p{
+    font-family: "Sofia";
+    font-size: 16px;
+    line-height: 26px;
+    color: #009D98;    
+}
+.move_slider > span > div:last-of-type > span:last-of-type p{
+    font-family: "Sofia-semibold";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #009D98; 
+}
