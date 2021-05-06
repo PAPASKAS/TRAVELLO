@@ -1,0 +1,17 @@
+/*header*/
+@media(max-width:1200px){
+    .header{
+        padding:0 10px;
+    }
+    .header nav{
+        display:none;
+    }
+    .hamb{
+        display:block;
+    }
+    .header .row:last-child p{
+        font-size:50px;
+        line-height: 65px;
+    }
+    
+}

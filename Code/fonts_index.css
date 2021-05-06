@@ -37,6 +37,14 @@ a{
     -webkit-text-stroke: 2px #083C4C;
 }
 
+.open_hamb a{
+    font-family: "sofia";
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
 /*intro*/
 .intro input{
     font-family: "Sofia";

@@ -29,7 +29,7 @@ span{
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     margin:0 auto;
-    width:1080px;
+    max-width:1080px;
 }
 .header .row:first-child{/*top padding*/
     padding-top:32px;
@@ -57,12 +57,44 @@ span{
     gap:29px;
 }
 
+.hamb{
+    display:none;
+}
+.hamb > div{
+    width:25px;
+    float:right;
+    cursor: pointer;
+}
+.hamb > div > div{
+    border:1px solid white;
+    background:white;
+}
+.hamb > div > div:not(:last-child){
+    margin-bottom:5px;
+}
+.open_hamb{
+    overflow:hidden;
+    position:absolute;
+    padding:10px 15px;
+    top:65px;
+    right:25px;
+    display:none;
+    width:0;
+    height: 200px;
+    background:rgba(227, 227, 227, 0.6);
+    white-space: nowrap;
+}
+
+.open_hamb div:not(:last-child){
+    margin-bottom:12px;
+}
 
 
 /*intro*/
 .background_intro{
+    border:1px solid red;
     height:188px;
-    width:1030px;
+    max-width:1030px;
     float:right;
     background:url(../Source/Icons/Group\ 97.svg) no-repeat bottom left;
 }
@@ -71,8 +103,6 @@ span{
 }
 .intro{/*style and align form*/
     background:white;
-    position:relative;
-    right:100px;
     width:897px;
     height: 152px;
     border-radius:50px 5px;
@@ -401,4 +431,16 @@ span{
 .bottom_footer > div:last-of-type{
     margin:20px auto;
     text-align: center;
+}
+
+
+
+
+
+.block_learn_more,
+.block_slider,
+.flash,
+.message_block,
+.footer{
+    display:none;
 }
