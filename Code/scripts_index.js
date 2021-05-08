@@ -30,18 +30,25 @@ function hamburger(){
 
 
 
-
-
-
 //slider
 let quantity_slide = document.querySelectorAll(".move_slider > span").length
-let width_slide = document.querySelector(".move_slider > span").offsetWidth
 document.querySelector(".move_slider").style.left = 0
 let current_slide = 0
+let slides_on_screen = 3
 
 function next(){
-    
-    if(current_slide < quantity_slide - 3){
+    let width_slide = document.querySelector(".move_slider > span").offsetWidth
+    let width_slider = document.querySelector(".move_slider").offsetWidth
+
+    if(width_slider > 880){
+        slides_on_screen = 3
+    }else if(width_slider >= 440 && width_slide <= 880){
+        slides_on_screen = 2
+    }else{
+        slides_on_screen = 1
+    }
+
+    if(current_slide < quantity_slide - slides_on_screen){
         current_slide++
     }
     else{
@@ -50,10 +57,21 @@ function next(){
 
     document.querySelector(".move_slider").style.left = -width_slide * current_slide + -25 * current_slide + "px";
 }
+
 function prev(){
-    
+    let width_slide = document.querySelector(".move_slider > span").offsetWidth
+    let width_slider = document.querySelector(".move_slider").offsetWidth
+
+    if(width_slider > 880){
+        slides_on_screen = 3
+    }else if(width_slider >= 440 && width_slide <= 880){
+        slides_on_screen = 2
+    }else{
+        slides_on_screen = 1
+    }
+
     if(current_slide === 0){
-        current_slide = quantity_slide - 3
+        current_slide = quantity_slide - slides_on_screen
     }
     else{
         current_slide--

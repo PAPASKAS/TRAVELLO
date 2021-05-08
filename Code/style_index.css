@@ -90,13 +90,13 @@ span{
 }
 
 
+
 /*intro*/
 .background_intro{
-    border:1px solid red;
     height:188px;
+    margin:0 auto;
     max-width:1030px;
-    float:right;
-    background:url(../Source/Icons/Group\ 97.svg) no-repeat bottom left;
+    background:url(../Source/Icons/Group\ 97.svg) no-repeat 100px 100px;
 }
 .intro_block{/*align block*/
     float:right;
@@ -139,8 +139,10 @@ span{
 }
 
 
+
+
+/*learn more*/
 .block_learn_more{
-    margin-top:187px;
     padding:107px 0 98px 0;
 }
 
@@ -155,7 +157,7 @@ span{
                url(../Source/Icons/Group\ 92.svg) no-repeat 12% center,
                url(../Source/Icons/Group\ 91.svg) no-repeat 16.5% top;
 }
-.left_side{
+.learn_more .left_side{
     height: 100%;
 }
 .learn_more .right_side{/*align text*/
@@ -164,16 +166,15 @@ span{
 }
 .learn_more .right_side > div{
     margin:auto 0 auto 122px;
-    
 }
 .learn_more .right_side p{
     margin:auto 0;
 }
-.learn_more .right_side p:first-child{
-    width:271px;
+.learn_more .right_side p:first-child{/*heading right side*/
+    max-width:271px;
 }
 .learn_more .right_side p:last-of-type{
-    width:400px;
+    max-width:400px;
     margin:20px 0 40px 0;
 }
 .learn_more .right_side > div > div{
@@ -282,6 +283,8 @@ span{
 }
 
 
+
+
 /*flash*/
 .flash{
     max-width:1150px;
@@ -300,7 +303,9 @@ span{
 }
 .presentation_flash{
     display:flex;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    margin:0 auto;
+    gap:80px;
 }
 .presentation_flash div:first-of-type{/*img city*/
     display:flex;
@@ -390,8 +395,9 @@ span{
 /*footer*/
 .top_footer{
     display:flex;
+    padding:0 20px;
     justify-content: space-between;
-    max-width:1150px;
+    max-width:1170px;
     margin:0 auto 120px auto;
 }
 .bottom_footer{
@@ -400,7 +406,8 @@ span{
 }
 .bottom_footer > div{
     margin:0 auto;
-    max-width:1150px;
+    padding:0 20px;
+    max-width:1170px;
 }
 .bottom_footer span:first-of-type p:nth-child(2){/*padding between text*/
     margin:30px 0 15px 0;
@@ -422,25 +429,12 @@ span{
     margin-top:30px;
 }
 .bottom_footer > div:first-of-type{
-    padding:705px 0 60px 0;
-    display:flex; 
+    padding:680px 0 60px 0;
+    display:flex;
     justify-content: space-between;
     border-bottom:1px solid #FFFFFF;
-
 }
 .bottom_footer > div:last-of-type{
     margin:20px auto;
     text-align: center;
-}
-
-
-
-
-
-.block_learn_more,
-.block_slider,
-.flash,
-.message_block,
-.footer{
-    display:none;
 }
